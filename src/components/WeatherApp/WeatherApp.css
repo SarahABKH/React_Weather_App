@@ -1,0 +1,116 @@
+
+.App{
+    background-color: rgba(214, 228, 228, 0.201);
+}
+.container{
+    width: 600px;
+    height: 1000px;
+    margin:auto;
+    margin-top: 75px;
+    margin-bottom: 300px;
+    padding-top: 100px;
+    border-radius: 50px;
+    background-image: linear-gradient(180deg ,rgb(8, 19, 115), rgb(41, 105, 158));
+}
+.top-bar{
+    display: flex; /* Display its children in a row */
+    justify-content: center; /* Spread children horizontally */
+    gap:14px;
+    padding-top:0px;
+}
+
+.top-bar input{
+    display:flex;
+    width:362px;
+    height:70px;
+    border-radius: 50px;
+    font: 24px/1 system-ui, sans-serif;
+    outline-offset: 8px;
+    outline-color: aquamarine;
+    outline-width: 5px;
+    background-color: rgb(194, 180, 163);
+    padding-left: 30px;
+    font-family: fantasy;
+    border-color: blanchedalmond;
+    font-size: 35px;
+}
+.search-icon{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:74px;
+    height:74px;
+    border-radius:40px;
+    cursor:pointer;
+    background-color:rgb(194, 180, 163);
+}
+
+.weather-image{
+    margin-top: 29px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.weather-temp{
+    display:flex;
+    justify-content:center;
+    color: antiquewhite;
+    font-size:120px;
+    font-family: fantasy;
+    font-weight: 100px;
+    text-shadow: 2px 2px #d0c7c7;
+}
+
+.weather-location{
+    display:flex;
+    justify-content:center ;
+    color:antiquewhite;
+    font-size:60px;
+    font-weight: 400px;
+    font-family: fantasy;
+    text-shadow: 1px 1px #d0c7c7;
+}
+.data-container{
+    margin-top: 50px;
+    color:white;
+    display:flex;
+    justify-content: center;
+}
+.element{
+    margin:auto;
+    display: flex;
+    align-items:flex-start;
+    gap:12px;
+}
+
+.data{
+    font-size:34px;
+    font-weight: 400;
+}
+.text{
+    font-size:20px;
+    font-weight:400;
+}
+.icon{
+    margin-top: 10px;
+}
+.default{
+    font-size:90px;
+    font-family: fantasy;
+    color: antiquewhite;
+    padding-top: 50%;
+}
+@keyframes sunnyAnimation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .cloud_icon {
+    /* Apply the animation to the weather icon element */
+    animation: sunnyAnimation 5s linear infinite; /* Adjust the duration and timing function as needed */
+  }
